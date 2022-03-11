@@ -1,0 +1,292 @@
+@media (max-width: 1440px) {
+  .main-section {
+    padding-right: 40px;
+    padding-left: 40px;
+
+    .main-images-slider {
+      padding-right: 40px;
+    }
+  }
+
+  .advantage-section-image-wrapper {
+    .img1 {
+      width: 260px;
+    }
+    .img2 {
+      width: 290px;
+    }
+    .img3 {
+      width: 260px;
+    }
+  }
+
+  .aboutPage-patient-section {
+    .sircle {
+      &:nth-child(1):after {
+        content: '';
+        width: 1070px;
+      }
+    }
+    .sircle-2 {
+      &:nth-child(1):after {
+        content: '';
+        width: 355px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .advantage-section-image-wrapper {
+    height: 425px;
+    .img1 {
+      width: 260px;
+    }
+    .img2 {
+      width: 290px;
+      left: 130px;
+    }
+    .img3 {
+      width: 260px;
+    }
+  }
+
+  .aboutPage-patient-section {
+    .sircle {
+      &:nth-child(1):after {
+        content: '';
+        width: 960px;
+      }
+    }
+    .sircle-2 {
+      &:nth-child(1):after {
+        content: '';
+        width: 325px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-section {
+    .main-contents-wrapper {
+      height: 1000px;
+    }
+    .main-images-slider {
+      margin: 0 auto;
+    }
+  }
+
+  .advantage-section-image-wrapper {
+    height: 345px;
+    .img1 {
+      width: 200px;
+    }
+    .img2 {
+      width: 230px;
+    }
+    .img3 {
+      width: 200px;
+    }
+  }
+
+  .aboutPage-patient-section {
+    .sircle {
+      &:nth-child(1):after {
+        content: unset;
+      }
+    }
+    .sircle-2 {
+      &:nth-child(1):after {
+        content: unset;
+      }
+    }
+  }
+}
+
+@media (max-width: 1030px) {
+  .about-section__img-wrapper {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -140px;
+  }
+
+  .advantage-section-image-wrapper {
+    height: 345px;
+    .img2 {
+      left: 70px;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .main-section {
+    padding-right: 30px;
+    padding-left: 30px;
+  } 
+
+  .about-section__img-wrapper {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -100px;
+  }
+
+  .advantage-section-image-wrapper {
+    height: 305px;
+    .img2 {
+      left: 70px;
+      width: 200px;
+    }
+  }
+
+  @keyframes changeBackgroundColor {
+    0% {
+      background: rgba(2, 52, 98, 0.72);
+      backdrop-filter: blur(32px);
+    }
+    50% {
+      backdrop-filter: blur(20px);
+      transform: translate3d(300px, 0px, 75px);
+    }
+    100% {
+      background: rgba(2, 52, 98, 0.72);
+      backdrop-filter: blur(32px);
+    }
+  }
+
+  .tab{
+    overflow: auto;
+    width: 100%;
+    flex-wrap: nowrap!important;
+    scrollbar-width: none!important;
+  }
+  
+  .tab::before {
+    display: none;
+  }
+  
+  .tab::-webkit-scrollbar{
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .main-section {
+    .main-contents-wrapper {
+      height: 1000px;
+    }
+  }
+.main-images-slider {
+  width: 100%;
+  padding-left: 70px;
+}
+}
+
+@media (max-width: 640px) {
+  .uk-container {
+    padding-right: 22px !important;
+    padding-left: 22px !important;
+  }
+  .main-section {
+    padding-top: 140px;
+    padding-right: 0px;
+    padding-left: 0px;
+    .main-contents-wrapper {
+      height: auto;
+    }
+    .main-images-slider {
+      margin-bottom: 70px;
+    }
+  }
+
+  .advantage-section-image-wrapper-mobile {
+    height: 270px;
+    .img1 {
+      width: 220px;
+    }
+    .img2 {
+      width: 190px;
+      left: 180px;
+    }
+    .img3 {
+      width: 220px;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .uk-offcanvas-flip .uk-open>.uk-offcanvas-bar {
+    width: 90%;
+  }
+  .main-section {
+    .main-images-slider {
+      margin-bottom: 40px;
+      padding-right: 22px;
+      padding-left: 50px;
+    }
+  }
+
+  .advantage-section-image-wrapper-mobile {
+    height: 290px;
+    .img2 {
+      width: 190px;
+      left: 130px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .advantage-section-image-wrapper-mobile {
+    margin-top: 20px;
+    height: 280px;
+    .img1 {
+      width: 180px;
+    }
+    .img2 {
+      width: 190px;
+      left:50%;
+      transform: translateX(-50%) !important;
+    }
+    .img3 {
+      width: 180px;
+    }
+  }
+
+  .main-section {
+    padding-top: 100px;
+  }
+
+  .main-images-slider {
+    margin-bottom: 0;
+    .images-wrapper {
+      height: 300px;
+      .img1 {
+        width: 120px;
+      }
+      .img2 {
+        width: 160px;
+      }
+      .img3 {
+        width: 120px;
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .advantage-section-image-wrapper-mobile {
+    margin-top: 20px;
+    height: 225px;
+    .img1 {
+      width: 150px;
+    }
+    .img2 {
+      width: 160px;
+    }
+    .img3 {
+      width: 150px;
+    }
+  }
+}

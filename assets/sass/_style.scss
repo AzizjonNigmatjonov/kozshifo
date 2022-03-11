@@ -1,0 +1,190 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+.inactive-header-bg {
+  background: #023462;
+}
+html::-webkit-scrollbar {
+  width: 12px;
+  height: 7px;
+  margin-right: 2px;
+}
+html::-webkit-scrollbar-thumb {
+  background: linear-gradient(60deg, rgba(62, 214, 158, 0.3) 43%, rgba(62, 214, 158, 0.3) 49%);
+  border-radius: 4px;
+}
+html::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(13deg, rgba(62, 214, 158, 1) 14%, rgba(62, 214, 158, 1) 64%);
+}
+
+html::-webit-scrollbar-track {
+  background: rgba(245, 245, 245, 0.88);
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0px 0px 0px rgba(245, 245, 245, 0.88);
+  box-shadow: inset 0px 0px 0px rgba(245, 245, 245, 0.88);
+}
+
+body {
+  font-family: 'Gilroy';
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar__list {
+  .nav-item.active::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #3ED69E;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+  }
+}
+
+.header-bg {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(32px);
+}
+
+.uk-offcanvas-flip .uk-open>.uk-offcanvas-bar {
+  background-color: #0C1D32;
+  width: 350px;
+}
+.navbar .uk-offcanvas-close {
+  position: static;
+  padding: 0;
+}
+.navbar .uk-offcanvas-close svg {
+  fill: #fff;
+}
+.navbar .uk-offcanvas-close svg:nth-child(2) {
+  display: none;
+}
+
+.about-section {
+  &__img-wrapper {
+    background: rgba(2, 52, 98, 0.72);
+    backdrop-filter: blur(32px);
+    animation: changeBackgroundColor;
+    animation-duration: 5s;
+    animation-delay: 7s;
+  }
+}
+
+.about-section__img-wrapper {
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+.spin {
+  animation: spin 3s infinite;
+}
+
+.success-section {
+  background-image: url('../images/success-background-img.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-section {
+  background-image: url('../images/form-background-img.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Gilroy';
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-images-slider {
+  button>div {
+    background-color: rgba(2, 52, 98, 0.42);
+    backdrop-filter: blur(42px);
+  }
+  button.active>div {
+    background-color: rgba(2, 52, 98, 1) !important;
+  }
+}
+
+// about page
+.aboutPage-patient-section {
+  ul {
+    li {
+      .wrapper {
+        position: relative;
+        z-index: 2;
+  
+        span {
+          position: relative;
+          z-index: 2;
+        }
+      }
+    }
+  }
+
+  .sircle {
+    position: relative;
+
+    &:nth-child(1):after {
+      content: '';
+      width: 1130px;
+      height: 2px;
+      background-color: rgba(23, 26, 99, 0.12);
+      position: absolute;
+      top: 22.5px;
+      left: 0;
+      z-index: 1;
+    }
+  }
+  .sircle-2 {
+    position: relative;
+
+    &:nth-child(1):after {
+      content: '';
+      width: 400px;
+      height: 2px;
+      background-color: rgba(23, 26, 99, 0.12);
+      position: absolute;
+      top: 22.5px;
+      left: 0;
+      z-index: 1;
+    }
+  }
+}
+
+// services page
+.servicesPage-main-section {
+  .uk-tab {
+    a {
+      color: #023462;
+      font-weight: 500;
+      font-size: 18px;
+      padding: 16px 0;
+      position: relative;
+      text-transform: none;
+    }
+    .uk-active>a {
+      border: none;
+    }
+    .uk-active>a::after {
+      content: '';
+      width: 100%;
+      height: 4px;
+      background-color: #3ED69E;
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      border-radius: 5px;
+    }
+  }
+}

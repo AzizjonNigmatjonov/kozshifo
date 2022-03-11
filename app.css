@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .heading-1 {
+    @apply text-[32px] sm:text-[42px] font-[600];
+  }
+
+  .heading-2 {
+    @apply text-[24px] lg:text-[36px] font-[600];
+  }
+
+  .heading-number {
+    @apply text-[48px] sm:text-[58px] font-bold;
+  }
+
+  .heading-card {
+    @apply text-[24px] font-bold;
+  }
+
+  .hover-link {
+    @apply hover:no-underline;
+  }
+
+  .hover-link:hover {
+    color: inherit;
+  }
+
+  .font-400 {
+    font-weight: 400;
+  }
+
+  .font-500 {
+    font-weight: 500;
+  }
+
+  .font-600 {
+    font-weight: 600;
+  }
+
+  .font-800 {
+    font-weight: 800;
+  }
+
+  .font-gilroy {
+    font-family: 'Gilroy';
+  }
+}

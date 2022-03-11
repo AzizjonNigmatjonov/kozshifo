@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ko'z shifo</title>
+
+  <link rel="stylesheet" href="../assets/css/uikit.min.css" />
+  <link rel="stylesheet" href="../assets/css/tailwind.css" />
+  <link rel="stylesheet" href="../assets/sass/main.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+
+<body>
+
+  <div id="header"
+  uk-sticky="show-on-up: true; animation: uk-animation-slide-top; sel-target: .header; cls-active: uk-navbar-sticky inactive-header-bg; cls-inactive: uk-navbar-transparent; z-[10]; top: 200;"
+  class="navbar">
+  <header class="header absolute top-0 left-0 w-full z-10 border-b border-[#023361] bg-[#023361] border-opacity-[0.12]">
+
+    <div class="uk-container uk-container-large">
+      <nav class="uk-flex uk-flex-between uk-flex-middle py-[32px]">
+        <div class="uk-navbar-left w-[300px] uk-padding-remove-left">
+          <a href="index.html">
+            <img class="uk-animation-fade w-[178px] sm:w-[190px]" src="./../assets/images/icons/logo-white.svg" alt="Logo">
+          </a>
+        </div>
+
+        <div class="uk-visible@l uk-navbar-center uk-margin-remove-top"
+          uk-scrollspy="target: .animateRight; cls: uk-animation-slide-left; delay: 100;">
+          <ul class="flex uk-flex-middle space-x-[35px] navbar__list" uk-grid>
+            <li class="text-[#fff] uk-padding-remove-left animateRight">
+              <a href="index.html" class="nav-item font-medium hover-link relative line-animation-2">
+                Bosh sahifa
+                <img class="absolute bottom-[3px] right-[-10px]" src="./../assets/images/icons/arrow-bottom-small.svg"
+                  alt="arrow">
+              </a>
+            </li>
+            <li class="text-[#fff] uk-padding-remove-left animateRight">
+              <a href="About.html" class="nav-item font-medium hover-link relative line-animation-2">
+                Biz haqimizda
+                <img class="absolute bottom-[3px] right-[-10px]" src="./../assets/images/icons/arrow-bottom-small.svg"
+                  alt="arrow">
+              </a>
+            </li>
+            <li class="text-[#fff] uk-padding-remove-left animateRight">
+              <a href="Services.html" class="nav-item font-medium hover-link relative line-animation-2">
+                Xizmatlarimiz
+                <img class="absolute bottom-[3px] right-[-10px]" src="./../assets/images/icons/arrow-bottom-small.svg"
+                  alt="arrow">
+              </a>
+            </li>
+            <li class="text-[#fff] uk-padding-remove-left animateRight">
+              <a href="Contact.html" class="nav-item font-medium hover-link relative line-animation-2">
+                Kontaktlar
+                <img class="absolute bottom-[3px] right-[-10px]" src="./../assets/images/icons/arrow-bottom-small.svg"
+                  alt="arrow">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="uk-navbar-right">
+          <div class="uk-flex-middle flex">
+
+            <div class="text-[#023361] hidden md:block mr-[30px] lg:mr-0 uk-animation-slide-right">
+              <a href="+998974040440"
+                class="main-section-btn pr-[12px] flex items-center rounded-full text-[#fff] hover-link duration-300 group relative">
+                <div
+                  class="bg-[#3ED79F] w-[45px] h-[40px] rounded-full absolute group-hover:w-full duration-500 z-[1] flex items-center">
+                  <img class="ml-[10px] main-section-btn-arrow duration-500" src="./../assets/images/icons/phone.svg"
+                    alt="phone">
+                </div>
+                <p class="ml-[54px] z-[2] relative font-500">
+                  +998 97 404 04 40
+                </p>
+              </a>
+            </div>
+
+            <div class="uk-hidden@l">
+              <div class="ml-[30px]">
+                <a href="javascript:void(0);" uk-toggle="target: #offcanvas-flip" class="hover-link">
+                  <svg width="27" height="19" viewBox="0 0 27 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0 1.5C0 0.671573 0.671573 0 1.5 0H25.5C26.3284 0 27 0.671573 27 1.5C27 2.32843 26.3284 3 25.5 3H1.5C0.671574 3 0 2.32843 0 1.5Z"
+                      fill="#fff" />
+                    <path
+                      d="M4.0918 9.5C4.0918 8.67157 4.76337 8 5.5918 8H25.5009C26.3293 8 27.0009 8.67157 27.0009 9.5C27.0009 10.3284 26.3293 11 25.5009 11H5.59179C4.76337 11 4.0918 10.3284 4.0918 9.5Z"
+                      fill="#fff" />
+                    <path
+                      d="M0 17.5C0 16.6716 0.671573 16 1.5 16H25.5C26.3284 16 27 16.6716 27 17.5C27 18.3284 26.3284 19 25.5 19H1.5C0.671574 19 0 18.3284 0 17.5Z"
+                      fill="#fff" />
+                  </svg>
+                </a>
+              </div>
+
+              <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+                <div class="uk-offcanvas-bar mobile-navbar">
+
+                  <div class="uk-flex uk-flex-right">
+                    <button class="uk-offcanvas-close" type="button" uk-close>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path
+                          d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z" />
+                      </svg>
+                    </button>
+                  </div>
+
+                  <ul class="mt-[50px] items-end uk-flex-column uk-grid-small uk-text-uppercase uk-child-width-1-1"
+                    uk-grid
+                    uk-scrollspy="target: .animBottom; cls: uk-animation-slide-top-small; delay: 100; repeat: true">
+                    <li class="uk-flex uk-flex-right">
+                      <a href="index.html" class="font-500 animBottom">
+                        Bosh sahifa
+                      </a>
+                    </li>
+                    <div>
+                      <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]">
+                    </div>
+                    <li class="uk-flex uk-flex-right">
+                      <a href="About.html" class="font-500 animBottom">
+                        Biz haqimizda
+                      </a>
+                    </li>
+                    <div>
+                      <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]">
+                    </div>
+                    <li class="uk-flex uk-flex-right">
+                      <a href="Services.html" class="font-500 animBottom">
+                        Xizmatlarimiz
+                      </a>
+                    </li>
+                    <div>
+                      <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]">
+                    </div>
+                    <li class="uk-flex uk-flex-right">
+                      <a href="Contact.html" class="font-500 animBottom">
+                        Kontaktlar
+                      </a>
+                    </li>
+                    <div>
+                      <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]">
+                    </div>
+                    <li class="uk-flex uk-flex-right md:hidden">
+                      <a href="tel:+998974040440" class="font-500 animBottom">
+                        +998 97 404 04 40
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+</div>
+
+  <section class="servicesPage-main-section uk-section pt-[150px] uk-overflow-hidden">
+    <div class="border-b-2" style="border-color: rgba(2, 52, 98, 0.12);">
+      <div class="uk-container uk-container-large pb-[50px]">
+        <h1 class="heading-1 text-[#0C1D32]">
+          Kontaktlarimiz
+        </h1>
+        <p class="mt-[12px] text-[#023462] text-opacity-[0.72] font-medium md:w-[400px] ">
+          Bu yerda siz klinikamiz haqidagi barcha malumotlarni
+          olishingiz mumkun bo’ladi.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="uk-section relative uk-overflow-hidden uk-padding-remove-top uk-margin-top">
+    <div class="uk-container uk-container-large">
+      <div class="uk-child-width-1-2@m uk-flex-center uk-grid-large" uk-grid>
+
+        <div uk-scrollspy="cls: uk-animation-slide-left; delay: 300;">
+          <div class="py-[32px] px-[42px] rounded-[12px] flex md:hidden flex-col space-y-[12px] text-[#023462] min-h-[230px]" style="background: rgba(255, 255, 255, 0.3); backdrop-filter: blur(120px);">
+            <h3 class="text-[26px] text-[#0C1D32] font-[600] mb-[6px]">Jizzax shahri</h3>
+            <a href="tel:+998955030303" class="hover-link text-[#023462] font-medium">
+              +998 95 503 03 03
+            </a>
+            <a href="tel:+998976430333" class="hover-link text-[#023462] font-medium">
+              +998 97 643 03 33
+            </a>
+            <p class="text-[#023462] font-medium md:w-[300px]">
+              Bu joyida klinikani joylashuvi yozilishi
+              kerak bo’ladi
+            </p>
+          </div>
+          <div class="h-[350px] sm:h-[500px] w-[100%] relative z-[2]">
+            <iframe class="rounded-[12px]"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97633.7521909988!2d67.78435498248544!3d40.118783205243744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38b29442f6b6d4d9%3A0x9278c40ee88910e2!2z0JTQttC40LfQsNC6LCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e0!3m2!1sru!2s!4v1646841956276!5m2!1sru!2s"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+            <div class="py-[32px] px-[42px] rounded-[12px] hidden md:flex absolute left-0 lg:left-[40px] bottom-0 lg:bottom-[-100px] flex-col space-y-[12px] text-[#023462] min-h-[230px]" style="background: rgba(255, 255, 255, 0.3); backdrop-filter: blur(120px);">
+              <h3 class="text-[26px] text-[#0C1D32] font-[600] mb-[6px]">Jizzax shahri</h3>
+              <a href="tel:+998955030303" class="hover-link text-[#023462] font-medium hover:font-bold duration-200">
+                +998 95 503 03 03
+              </a>
+              <a href="tel:+998976430333" class="hover-link text-[#023462] font-medium hover:font-bold duration-200">
+                +998 97 643 03 33
+              </a>
+              <p class="text-[#023462] font-medium w-[300px]">
+                Bu joyida klinikani joylashuvi yozilishi
+                kerak bo’ladi
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div uk-scrollspy="cls: uk-animation-slide-right; delay: 300;">
+          <div class="py-[32px] px-[42px] rounded-[12px] flex md:hidden flex-col space-y-[12px] text-[#023462] min-h-[230px]" style="background: rgba(255, 255, 255, 0.3); backdrop-filter: blur(120px);">
+            <h3 class="text-[26px] text-[#0C1D32] font-[600] mb-[6px]">Jizzax shahri</h3>
+            <a href="tel:+998955030303" class="hover-link text-[#023462] font-medium">
+              +998 95 503 03 03
+            </a>
+            <p class="text-[#023462] font-medium md:w-[300px]">
+              Bu joyida klinikani joylashuvi yozilishi
+              kerak bo’ladi
+            </p>
+          </div>
+          <div class="h-[350px] sm:h-[500px] w-[100%] relative z-[2]">
+            <iframe class="rounded-[12px]"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97633.7521909988!2d67.78435498248544!3d40.118783205243744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38b29442f6b6d4d9%3A0x9278c40ee88910e2!2z0JTQttC40LfQsNC6LCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e0!3m2!1sru!2s!4v1646841956276!5m2!1sru!2s"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+            <div class="py-[32px] px-[42px] rounded-[12px] hidden md:flex absolute left-0 lg:left-[40px] bottom-0 lg:bottom-[-100px] flex-col space-y-[12px] text-[#023462] min-h-[230px]" style="background: rgba(255, 255, 255, 0.3); backdrop-filter: blur(120px);">
+              <h3 class="text-[26px] text-[#0C1D32] font-[600] mb-[6px]">Jizzax shahri</h3>
+              <a href="tel:+998955030303" class="hover-link text-[#023462] font-medium hover:font-bold duration-200">
+                +998 95 503 03 03
+              </a>
+              <p class="text-[#023462] font-medium w-[300px]">
+                Bu joyida klinikani joylashuvi yozilishi
+                kerak bo’ladi
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300;">
+          <div class="py-[32px] px-[42px] rounded-[12px] flex md:hidden flex-col space-y-[12px] text-[#023462] min-h-[230px]" style="background: rgba(255, 255, 255, 0.3); backdrop-filter: blur(120px);">
+            <h3 class="text-[26px] text-[#0C1D32] font-[600] mb-[6px]">Jizzax shahri</h3>
+            <a href="tel:+998955030303" class="hover-link text-[#023462] font-medium">
+              +998 95 503 03 03
+            </a>
+            <a href="tel:+998976430333" class="hover-link text-[#023462] font-medium">
+              +998 97 643 03 33
+            </a>
+            <p class="text-[#023462] font-medium md:w-[300px]">
+              Bu joyida klinikani joylashuvi yozilishi
+              kerak bo’ladi
+            </p>
+          </div>
+
+          <div class="h-[350px] sm:h-[500px] w-[100%] relative z-[2] lg:mt-[100px]">
+            <iframe class="rounded-[12px]"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97633.7521909988!2d67.78435498248544!3d40.118783205243744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38b29442f6b6d4d9%3A0x9278c40ee88910e2!2z0JTQttC40LfQsNC6LCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e0!3m2!1sru!2s!4v1646841956276!5m2!1sru!2s"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+            <div class="py-[32px] px-[42px] rounded-[12px] hidden md:flex absolute left-0 lg:left-[40px] bottom-0 lg:bottom-[-100px] flex-col space-y-[12px] text-[#023462] min-h-[230px]" style="background: rgba(255, 255, 255, 0.3); backdrop-filter: blur(120px);">
+              <h3 class="text-[26px] text-[#0C1D32] font-[600] mb-[6px]">Jizzax shahri</h3>
+              <a href="tel:+998955030303" class="hover-link text-[#023462] font-medium hover:font-bold duration-200">
+                +998 95 503 03 03
+              </a>
+              <a href="tel:+998976430333" class="hover-link text-[#023462] font-medium hover:font-bold duration-200">
+                +998 97 643 03 33
+              </a>
+              <p class="text-[#023462] font-medium w-[300px]">
+                Bu joyida klinikani joylashuvi yozilishi
+                kerak bo’ladi
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="uk-visible@l" uk-parallax="stroke: 100%; viewport: .1;"
+    style="transition: all 0.8s ease-in-out 0s; stroke-dasharray: 463; stroke-dashoffset: 0;">
+      <img class="absolute left-0 bottom-0" src="../assets/images/icons/contact-pattern-left.svg" uk-svg="stroke-animation: true"
+    style="fill: none; color: #10A0E7;" alt="img">
+    </div>
+
+    <div class="uk-visible@l" uk-parallax="stroke: 100%; viewport: .1;"
+    style="transition: all 0.8s ease-in-out 0s; stroke-dasharray: 463; stroke-dashoffset: 0;">
+      <img class="absolute right-0 bottom-0" src="../assets/images/icons/contact-pattern-right.svg" uk-svg="stroke-animation: true"
+    style="fill: none; color: #10A0E7;" alt="img">
+    </div>
+
+  </section>
+
+  <section class="uk-section form-section md:mt-[130px]">
+    <div class="uk-container uk-container-large">
+      <form class="uk-flex-middle uk-child-width-1-2@m uk-flex-between" uk-grid>
+        <div>
+          <div class="flex flex-col"
+            uk-scrollspy="target: .animLeft;cls: animate__animated animate__lightSpeedInLeft; delay: 200;">
+            <h2 class="heading-2 text-[#fff] animLeft">
+              Bu hayotni biz bilan yanada chiroyliva ranglarga boy ko’rishni imkoni bor
+            </h2>
+            <p class="text-[#fff] text-opacity-[0.72] mt-[22px] animLeft">
+              Bu joyiga endi sestramiz yozomidilar boshqa kopirayter yozib beradilar Shunaqa qilib bu
+              joyiga
+              yana ikki qator gap yozamiz shu
+            </p>
+
+            <div
+              class="mt-[32px] md:flex justify-between items-center w-full space-y-[20px] md:space-y-0 md:space-x-[20px] lg:space-x-[32px]">
+              <div class="w-[250px] sm:w-[86%] md:w-full animLeft">
+                <input type="text" placeholder="Huzayfa ibn Baxrom"
+                  class="w-full bg-transparent focus:outline-none text-[#fff] placeholder:text-[#fff] placeholder:text-opacity-[0.72] border border-[#fff]/50 focus:border-[#fff]/100 rounded-[32px] py-[10px] px-[20px]">
+              </div>
+              <div class="w-full flex items-center space-x-[20px] animLeft">
+                <input type="text" placeholder="+998 9X XXX XX XX"
+                  class="w-[250px] sm:w-full bg-transparent focus:outline-none text-[#fff] placeholder:text-[#fff] placeholder:text-opacity-[0.72] border border-[#fff]/50 focus:border-[#fff]/100 rounded-[32px] py-[10px] px-[20px]">
+                <button
+                  class="bg-[#3ED79F] bg-opacity-[0.5] p-[3px] rounded-full flex items-center justify-center animate-pulse group">
+                  <div class="h-[42px] w-[51px] rounded-full flex items-center justify-center bg-[#3ED79F]">
+                    <img class="group-hover:ml-[12px] group-hover:scale-[0.7] duration-300"
+                      src="../assets/images/icons/arrow-right.svg" alt="arrow">
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center uk-visible@m" uk-parallax="stroke: 100%; viewport: .3;"
+          style="transition: all 0.5s ease-in-out 0s; stroke-dasharray: 463; stroke-dashoffset: 0;">
+          <img src="../assets/images/icons/form-img.svg" uk-svg="stroke-animation: true"
+            style="fill: none; color: #10A0E7;" alt="img">
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="uk-section uk-padding-remove-bottom" uk-scrollspy="target: .animTop; cls: uk-animation-slide-top; delay: 100;">
+    <div class="flex flex-col items-center">
+        <div class="border-y border-[#023462] border-opacity-[0.1] py-[48px] w-full">
+            <div class="uk-container uk-container-large flex items-center flex-col">
+                <div>
+                    <a href="#">
+                        <img class="w-[240px]" src="./../assets/images/icons/logo.svg" alt="Brand">
+                    </a>
+                </div>
+
+                <nav class="mt-[42px]">
+                    <ul
+                        class="flex flex-col md:flex-row items-center space-y-[22px] md:space-y-0 md:space-x-[60px]">
+                        <li class="text-[#023462] animTop">
+                            <a href="index.html" class="text-[#023462] text-lg line-animation-2">Bosh sahifa</a>
+                        </li>
+                        <li class="text-[#023462] animTop">
+                            <a href="About.html" class="text-[#023462] text-lg line-animation-2">Biz haqimizda</a>
+                        </li>
+                        <li class="text-[#023462] animTop">
+                            <a href="Services.html" class="text-[#023462] text-lg line-animation-2">Xizmatlarimiz</a>
+                        </li>
+                        <li class="text-[#023462] animTop">
+                            <a href="Contact.html" class="text-[#023462] text-lg line-animation-2">Kontaktlar</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="uk-container uk-container-large py-[48px]">
+            <ul class="flex flex-col-reverse md:flex-row md:space-x-[20px] xl:space-x-[110px]">
+                <li class="mt-[42px] md:mt-0">
+                    <div class="flex flex-col items-center">
+                        <h4 class="text-[22px] text-[#023462] text-opacity-[0.72]">Sicial media:</h4>
+                        <div class="flex items-center space-x-[32px] mt-[30px]">
+                            <a href="#"
+                                class="animTop border rounded-full border-[#023462] w-[48px] h-[48px] flex items-center justify-center group">
+                                <img class="group-hover:scale-125 duration-200" loading="lazy" src="./../assets/images/icons/linkedin.svg" alt="linkedin">
+                            </a>
+                            <a href="#"
+                                class="animTop border rounded-full border-[#023462] w-[48px] h-[48px] flex items-center justify-center group">
+                                <img class="group-hover:scale-125 duration-200" loading="lazy" src="./../assets/images/icons/facebook.svg" alt="facebook">
+                            </a>
+                            <a href="#"
+                                class="animTop border rounded-full border-[#023462] w-[48px] h-[48px] flex items-center justify-center group">
+                                <img class="group-hover:scale-125 duration-200" loading="lazy" src="./../assets/images/icons/telegram.svg" alt="telegram">
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="mt-[32px] md:mt-0">
+                    <div class="flex flex-col items-center text-center">
+                        <h4 class="text-[22px] text-[#023462] text-opacity-[0.72] mb-[12px]">Bizning manzilimiz:
+                        </h4>
+                        <div class="group animTop">
+                            <p class="group-hover:text-[#111] duration-200 text-[#023462] text-xl font-[600]">
+                                Jizzax shahri <br>
+                                Sharof Rashidov shox ko'chasi,Unversal savdo majmuasi,
+                            </p>
+                            <div class="text-[#023462] text-xl font-[600] group-hover:text-[#111] duration-200">
+                                Mo'ljal: <a href="#" class="group-hover:text-[#067AFC] duration-200">Aloqa bank</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="flex flex-col items-center text-center">
+                        <h4 class="text-[22px] text-[#023462] text-opacity-[0.72] mb-[12px]">Biz bilan bog’laning:
+                        </h4>
+                        <div class="flex flex-col text-[#023462] space-y-[4px]">
+                            <a href="#" class="text-[24px] text-[#023462] font-[600] line-animation animTop">
+                                +998 97 404 04 40
+                            </a>
+                            <a href="#" class="text-[24px] text-[#023462] font-[600] line-animation animTop">
+                                ko’zshifo@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="border-y border-[#023462] border-opacity-[0.1] py-[32px] w-full">
+            <div class="uk-container uk-container-large">
+                <div class="uk-flex-middle justify-center sm:justify-between" uk-grid>
+                    <p class="text-[#023462] text-opacity-[0.72] sm:text-lg font-medium">© Ko’zshifo Barcha huqular
+                        himoyalangan</p>
+
+                    <a href="https://mount.uz">
+                        <img class="w-[100px]" loading="lazy" src="./../assets/images/icons/mount-logo.svg"
+                            alt="Brand">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  <script src="../assets/js/uikit-icons.min.js"></script>
+  <script src="../assets/js/uikit.min.js"></script>
+
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
