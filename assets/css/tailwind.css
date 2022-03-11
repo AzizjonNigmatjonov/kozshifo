@@ -797,6 +797,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 30px;
 }
 
+.mb-\[30px\] {
+  margin-bottom: 30px;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -871,6 +875,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-\[340px\] {
   height: 340px;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .max-h-\[410px\] {
@@ -1512,6 +1520,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 248 246 / var(--tw-text-opacity));
 }
 
+.text-\[\#111\] {
+  --tw-text-opacity: 1;
+  color: rgb(17 17 17 / var(--tw-text-opacity));
+}
+
 .text-opacity-\[0\.72\] {
   --tw-text-opacity: 0.72;
 }
@@ -1704,6 +1717,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:w-\[250px\] {
     width: 250px;
+  }
+
+  .sm\:w-\[220px\] {
+    width: 220px;
   }
 
   .sm\:flex-col {

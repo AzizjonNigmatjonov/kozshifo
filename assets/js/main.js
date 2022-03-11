@@ -38,3 +38,8 @@ btn3.addEventListener('click', e => {
   btn2.classList.remove('active');
   btn3.classList.add('active');
 })
+
+window.onload = function() {
+  const el = document.getElementById('overlay');
+  el.style.display = 'none';
+};

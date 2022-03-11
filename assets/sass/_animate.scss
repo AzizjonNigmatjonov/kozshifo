@@ -47,11 +47,9 @@
   left: 0;
   border-radius: 10px;
 }
-
 .line-animation:hover {
   color: #023462 !important;
 }
-
 .line-animation:hover::after {
   content: '';
   position: absolute;
@@ -64,11 +62,9 @@
   -webkit-transition: width 0.4s;
   transition: width 0.4s;
 }
-
 .line-animation-2 {
   position: relative;
 }
-
 .line-animation-2::after {
   content: '';
   position: absolute;
@@ -79,7 +75,6 @@
   left: 0;
   border-radius: 5px;
 }
-
 .line-animation-2:hover::after {
   content: '';
   position: absolute;
@@ -92,28 +87,17 @@
   -webkit-transition: width 0.4s;
   transition: width 0.4s;
 }
-
-// .advantage-img-1 {
-//   transition: all 0.7s ease-in-out;
-//   cursor: pointer;
-// }
-// .advantage-img-1:hover {
-//   transform: translate3d(-50px, -60px, 75px) rotate(12deg);
-//   transition: all 0.7s ease-in-out;
-// }
-// .advantage-img-2 {
-//   cursor: pointer;
-//   transition: all 0.7s ease-in-out;
-// }
-// .advantage-img-2:hover {
-//   transform: translate3d(-120px, -70px, 75px) rotate(-3deg);
-//   transition: all 0.7s ease-in-out;
-// }
-// .advantage-img-3 {
-//   transition: all 0.7s ease-in-out;
-//   cursor: pointer;
-// }
-// .advantage-img-3:hover {
-//   transform: translate3d(50px, -60px, 75px) rotate(-17deg);
-//   transition: all 0.7s ease-in-out;
-// }
+@keyframes Dots {
+  0% {
+    content: "";
+  }
+  33% {
+    content: ".";
+  }
+  66% {
+    content: "..";
+  }
+  100% {
+    content: "...";
+  }
+}
