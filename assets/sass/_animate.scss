@@ -47,6 +47,7 @@
   left: 0;
   border-radius: 10px;
 }
+
 .line-animation:hover {
   color: #023462 !important;
 }
@@ -86,18 +87,4 @@
   border-radius: 5px;
   -webkit-transition: width 0.4s;
   transition: width 0.4s;
-}
-@keyframes Dots {
-  0% {
-    content: "";
-  }
-  33% {
-    content: ".";
-  }
-  66% {
-    content: "..";
-  }
-  100% {
-    content: "...";
-  }
 }
