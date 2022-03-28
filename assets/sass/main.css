@@ -383,6 +383,13 @@ a:hover {
   }
 }
 
+@media (max-width: 1360px) {
+  .aboutPage-patient-section .sircle:nth-child(1):after {
+    content: '';
+    width: 1000px;
+  }
+}
+
 @media (max-width: 1300px) {
   .advantage-section-image-wrapper {
     height: 425px;

@@ -12,7 +12,7 @@
   }
 
   .heading-number {
-    @apply text-[48px] sm:text-[58px] font-bold;
+    @apply text-[40px] sm:text-[58px] font-bold;
   }
 
   .heading-card {
