@@ -430,41 +430,6 @@
               </div>
             </div>
           </li>
-          <li class="group">
-            <div class="flex space-x-[35px]" x-data="{ open: false }">
-              <div class="w-full sm:w-[300px] relative">
-                <img @click="open = !open" class="w-full duration-200 max-h-[410px] uk-overflow-hidden relative z-[2]"
-                  src="./../assets/images/about/about-doctor-img-4.png" alt="img">
-                <div class="mt-[12px]">
-                  <h3 class="text-[22px] font-medium text-[#023462]">
-                    Husan Mamasaidov
-                  </h3>
-                </div>
-                <div @click="open = !open" :class="!open ? 'rotate-180' : ''"
-                  class="hidden duration-200 lg:group-hover:flex group z-[3] cursor-pointer absolute top-1/2 right-[-24px] -translate-y-1/2 w-[48px] h-[48px] bg-[#F19817] rounded-full items-center justify-center">
-                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="24" cy="24" r="24" fill="#3ED69E" />
-                    <path
-                      d="M26.9998 31.9201L20.4798 25.4001C19.7098 24.6301 19.7098 23.3701 20.4798 22.6001L26.9998 16.0801"
-                      stroke="#023462" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
-                </div>
-              </div>
-              <div x-show="open" @click.outside="open = false"
-                class="w-[280px] mt-[10px] animate__animated animate__slideInLeft relative z-[1]">
-                <h3 class="text-[22px] font-medium text-[#023462]">
-                  Aliyev Alisher Botirovich
-                </h3>
-                <p class="text-[#023462] text-opacity-[0.82] mt-[8px]">
-                  Aliyev Alisher Botirovich 1992yil 26 martda tavallud topgan.
-                  2016 Samarqand tibbiyot instituti bitiruvchisi, 2016-yilda koʻz kasalliklari va koʻz mikroxirurgiyasi
-                  kafedrasida stajyor bo'lib ishlagan. 2018-yilda Moskvaning RUDN unversitetini tamomlagan. Faoliyati
-                  davomida Moskvada ishlagan. Xozirda Jizzax shahrida ko'z shifo klinikasida faoliyat yuritib keladi.
-                </p>
-              </div>
-            </div>
-          </li>
         </ul>
 
       </div>

@@ -28,10 +28,14 @@ html::-webit-scrollbar-track {
 }
 
 body {
-  font-family: 'Gilroy';
+  font-family: 'Inter';
   background-image: url("../images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: 'Inter' !important;
 }
 
 .navbar__list {
