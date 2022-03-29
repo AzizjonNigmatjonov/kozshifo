@@ -521,7 +521,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .font-gilroy {
-  font-family: 'Gilroy';
+  font-family: 'Inter';
 }
 
 .invisible {
@@ -608,6 +608,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   bottom: -15px;
 }
 
+.top-\[20px\] {
+  top: 20px;
+}
+
 .left-\[200px\] {
   left: 200px;
 }
@@ -626,22 +630,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .left-\[10px\] {
   left: 10px;
-}
-
-.top-\[\] {
-  top: ;
-}
-
-.top-\[30px\] {
-  top: 30px;
-}
-
-.top-\[100px\] {
-  top: 100px;
-}
-
-.top-\[20px\] {
-  top: 20px;
 }
 
 .z-10 {
