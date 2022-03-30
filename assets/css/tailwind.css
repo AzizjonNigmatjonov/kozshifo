@@ -1362,6 +1362,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 700;
 }
 
+.font-\[300\] {
+  font-weight: 300;
+}
+
 .leading-\[25px\] {
   line-height: 25px;
 }
